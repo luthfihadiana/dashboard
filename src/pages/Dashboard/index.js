@@ -17,19 +17,14 @@ export default function Index() {
     <section className={styles.container}>
       <div className={styles.header}>
         <h1>Dashboard</h1>
-        <div className={styles.period}>
+        <div className={styles.period} onClick={() => setShowFilter(true)}>
           <img src={Calendar} alt="calendar" className={styles.periodIcon} />
           <p>Period</p>
           <div className={styles.periodDate}>
             <p>{moment(startDate).format("D MMM YYYY")}</p>
             <span> - </span>
             <p>{moment(endDate).format("D MMM YYYY")}</p>
-            <span
-              className={`material-icons ${styles.icon}`}
-              onClick={() => setShowFilter(true)}
-            >
-              expand_more
-            </span>
+            <span className={`material-icons ${styles.icon}`}>expand_more</span>
           </div>
         </div>
       </div>

@@ -33,7 +33,7 @@ export default function Index(props) {
         </div>
         <div className={styles.content}>
           <div className={styles.buttonFilterContainer}>
-            <div className={styles.buttonFilter}>
+            <div className={`${styles.buttonFilter}`}>
               <p>Today</p>
             </div>
             <div className={styles.buttonFilter}>
@@ -59,6 +59,7 @@ export default function Index(props) {
             <Calendar
               value={valueStart}
               onChange={setValueStart}
+              minDate={new Date(valueEnd.getTime() - 6 * 30 * 24 * 3600 * 1000)}
               maxDate={new Date(valueEnd.getTime() - 24 * 3600 * 1000)}
             />
             <Calendar

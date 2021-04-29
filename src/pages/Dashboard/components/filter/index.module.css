@@ -46,12 +46,26 @@
 .buttonFilter {
   padding: 0.8rem;
   cursor: pointer;
+  transition: all 0.2s ease;
+}
+.buttonFilter:hover {
+  background-color: whitesmoke;
 }
 .buttonFilter p {
   font-size: 1.8rem;
 }
 .buttonFilter:not(:last-of-type) {
   border-bottom: 1px solid #cdcdcd;
+}
+.active {
+  background-color: var(--primary);
+}
+.active:hover {
+  background-color: var(--primary_hover);
+}
+.active p {
+  color: white;
+  font-weight: bold;
 }
 .buttonApply {
   background: var(--primary);
