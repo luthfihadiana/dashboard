@@ -1,0 +1,71 @@
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  z-index: 1002;
+}
+.body {
+  background: white;
+  width: 80%;
+  padding: 1.6rem;
+}
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+.headerIcon {
+  cursor: pointer;
+}
+.headerPeriod {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.headerPeriod > *:not(:last-child) {
+  margin-right: 0.8rem;
+}
+.content {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+.buttonFilterContainer {
+  border-right: 1px solid #cdcdcd;
+  padding: 0.8rem;
+}
+.buttonFilter {
+  padding: 0.8rem;
+  cursor: pointer;
+}
+.buttonFilter p {
+  font-size: 1.8rem;
+}
+.buttonFilter:not(:last-of-type) {
+  border-bottom: 1px solid #cdcdcd;
+}
+.buttonApply {
+  background: var(--primary);
+  outline: none;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  margin-top: 1.6rem;
+  cursor: pointer;
+}
+.calendar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

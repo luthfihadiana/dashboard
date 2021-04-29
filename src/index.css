@@ -1,13 +1,55 @@
-body {
+:root {
+  --primary: #37b04c;
+  --primary_hover: #40c556;
+  --darkPrimary: #289e45;
+  --danger: #f54142;
+  --highlight: #ffe7bd;
+  --primaryFont: "Open Sans", sans-serif;
+  --titleFont: "Source Sans Pro", sans-serif;
+  --fontColor: #727272;
+}
+
+* {
+  font-family: var(--primaryFont);
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.input,
+.taginput .taginput-container.is-focusable,
+.textarea,
+.select select {
+  color: var(--fontColor);
+  font-family: var(--primaryFont);
+}
+h1 {
+  font-size: 4rem;
+  color: var(--fontColor);
+  font-family: var(--titleFont);
+}
+h2 {
+  font-size: 2.4rem;
+  color: var(--fontColor);
+  font-family: var(--titleFont);
+}
+p {
+  font-size: 1.4rem;
+  color: var(--fontColor);
+  font-family: var(--primaryFont);
 }
