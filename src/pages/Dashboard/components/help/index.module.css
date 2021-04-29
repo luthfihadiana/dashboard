@@ -1,0 +1,30 @@
+.title {
+  color: white;
+  text-transform: uppercase;
+}
+.container {
+  width: 100%;
+  background-color: var(--primary);
+  padding: 0.8rem 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.6rem;
+}
+.section {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.section > *:not(:last-child) {
+  margin-right: 0.8rem;
+}
+.link {
+  color: white;
+  font-size: 1.4rem;
+}
+.logo {
+  width: 2rem;
+}
+.icon {
+  cursor: pointer;
+}

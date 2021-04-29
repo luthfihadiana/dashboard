@@ -1,0 +1,102 @@
+.container {
+  width: 100%;
+}
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerIcon {
+  cursor: pointer;
+}
+.period {
+  box-shadow: 0px 2px 3px #00000029;
+  background-color: white;
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.period > *:not(:last-child) {
+  margin-right: 0.8rem;
+}
+.periodIcon {
+  width: 2.2rem;
+}
+.periodDate {
+  display: flex;
+  margin-left: 1.6rem;
+  color: var(--fontColor);
+  align-items: center;
+}
+.periodDate > *:not(:last-child) {
+  margin-right: 0.8rem;
+}
+.salesTurnOver {
+  margin-top: 1.6rem;
+  padding: 0.8rem;
+  background-color: white;
+  box-shadow: 0px 2px 6px #0000000a;
+  border: 0.5px solid #cdcdcd;
+  width: 25%;
+}
+.salesTurnOverTitle {
+  color: #adadb8;
+  font-weight: normal;
+  margin-bottom: 0.8rem;
+}
+.salesTurnOverContent {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+.salesTurnOverIllustration img {
+  width: 52px;
+  margin-right: 1.6rem;
+}
+.salesTurnOverPrice {
+  font-weight: bold;
+  font-size: 2.4rem;
+  color: black;
+  font-family: var(--titleFont);
+}
+.salesTurnOverSummary {
+  display: flex;
+  align-items: flex-end;
+}
+.salesTurnOverPercentage {
+  margin-right: 0.4rem;
+  font-weight: bold;
+}
+.salesTurnOverIcon {
+  font-size: 1.8rem;
+}
+.up {
+  color: var(--primary);
+}
+.danger {
+  color: var(--danger);
+}
+.statistic {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 2fr 1fr 1fr;
+  column-gap: 1.6rem;
+  margin-top: 1.6rem;
+}
+.statisticSection {
+  background-color: white;
+  padding: 0.8rem;
+  box-shadow: 0px 2px 6px #0000000a;
+  border: 0.5px solid #cdcdcd;
+}
+.statisticTitle {
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 0.8rem;
+}
+.productList {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 0.8rem;
+}

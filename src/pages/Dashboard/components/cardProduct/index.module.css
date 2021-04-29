@@ -1,0 +1,39 @@
+.body {
+  border: 0.5px solid #c5c5c59c;
+  border-radius: 4px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+}
+.highlight {
+  border: none;
+  background-color: var(--highlight);
+  grid-template-columns: 1fr 3fr;
+}
+.desc {
+  padding: 1.6rem 0.8rem;
+}
+.infoContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.name {
+  color: black;
+}
+.info {
+  font-size: 1.2rem;
+}
+.highlight .name {
+  font-size: 2rem;
+}
+.highlight .info {
+  font-size: 1.4rem;
+}
+.imageContainer {
+  display: grid;
+  place-items: center;
+}
+.image {
+  width: 100%;
+}
